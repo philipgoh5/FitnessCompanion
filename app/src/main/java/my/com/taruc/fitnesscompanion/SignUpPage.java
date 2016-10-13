@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
 import my.com.taruc.fitnesscompanion.Classes.UserProfile;
@@ -44,31 +44,31 @@ public class SignUpPage extends FragmentActivity implements View.OnClickListener
 
     public static final String TAG = SignUpPage.class.getName();
     private static final int INITIAL_REWARD = 0;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     private String DOJ;
     private ServerRequests serverRequests;
 
-    @Bind(R.id.etEmail)
+    @BindView(R.id.etEmail)
     EditText etEmail;
-    @Bind(R.id.etName)
+    @BindView(R.id.etName)
     EditText etName;
-    @Bind(R.id.etDOB)
+    @BindView(R.id.etDOB)
     EditText etDOB;
-    @Bind(R.id.radioButtonMale)
+    @BindView(R.id.radioButtonMale)
     RadioButton rbMale;
-    @Bind(R.id.radioButtonFemale)
+    @BindView(R.id.radioButtonFemale)
     RadioButton rbFemale;
-    @Bind(R.id.etHeight)
+    @BindView(R.id.etHeight)
     EditText etHeight;
-    @Bind(R.id.etWeight)
+    @BindView(R.id.etWeight)
     EditText etWeight;
-    @Bind(R.id.etPassword)
+    @BindView(R.id.etPassword)
     EditText etPassword;
-    @Bind(R.id.btnRegister)
+    @BindView(R.id.btnRegister)
     Button btnRegister;
-    @Bind(R.id.etPasswordConfirmation)
+    @BindView(R.id.etPasswordConfirmation)
     EditText etPasswordConfirmation;
 
     private SimpleDateFormat mFormatter = new SimpleDateFormat("yyy-MM-dd");

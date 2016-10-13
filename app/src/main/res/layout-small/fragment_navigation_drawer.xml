@@ -10,12 +10,15 @@
         android:id="@+id/containerDrawerImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:background="#005b96">
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="63dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
             android:src="@drawable/logo_drawer"
             android:id="@+id/logoDrawer" />
     </LinearLayout>
@@ -26,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:text="Pair IChoice Device"
-        android:background="#FF669900"
+        android:background="@color/MainBackground"
         android:textSize="10dp" />
 
     <Button
@@ -35,16 +38,25 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:text="Pair HeartRate Device"
-        android:background="#D95763"
+        android:background="@color/MainBackground"
         android:textSize="10dp" />
 
     <Button
-        android:id="@+id/btnCheckHR"
+        android:id="@+id/btnVirtualRacer"
         android:layout_below="@id/btnPairHR"
         android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:text="Virtual Racer"
+        android:background="@color/MainBackground"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/btnCheckHR"
+        android:layout_below="@id/btnVirtualRacer"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
         android:text="Check Heart Rate"
-        android:background="#F89D4F"
+        android:background="@color/MainBackground"
         android:onClick="onButtonCheckHR"
         android:textSize="10dp" />
 
@@ -54,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:text="Sign Out"
-        android:background="#4E86C5"
+        android:background="@color/MainBackground"
         android:textSize="10dp" />
 
 

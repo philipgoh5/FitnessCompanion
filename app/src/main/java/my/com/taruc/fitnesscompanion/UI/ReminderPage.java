@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.Reminder;
 import my.com.taruc.fitnesscompanion.Database.ReminderDA;
@@ -32,9 +32,9 @@ public class ReminderPage extends ActionBarActivity {
     DeleteRequest deleteRequest;
     AlarmServiceController alarmServiceController;
 
-    @Bind(R.id.textViewNoData)
+    @BindView(R.id.textViewNoData)
     TextView textViewNoData;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     @Override

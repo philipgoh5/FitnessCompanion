@@ -31,7 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.AccelerometerSensor2;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.HeartRateSensor;
@@ -109,31 +109,31 @@ public class ExercisePage extends ActionBarActivity {
     boolean isGPSEnable = false;
     boolean isNetworkEnable = false;
 
-    @Bind(R.id.textViewType)
+    @BindView(R.id.textViewType)
     TextView textViewType;
-    @Bind(R.id.textViewCaloriesBurn)
+    @BindView(R.id.textViewCaloriesBurn)
     TextView textViewCaloriesBurn;
-    @Bind(R.id.textViewDuration)
+    @BindView(R.id.textViewDuration)
     TextView textViewDuration;
-    @Bind(R.id.textViewDistanceTarget)
+    @BindView(R.id.textViewDistanceTarget)
     TextView textViewDistanceTarget;
-    @Bind(R.id.CountDownTimer)
+    @BindView(R.id.CountDownTimer)
     TextView CountDownTimerText;
-    @Bind(R.id.textViewDistanceTargetCaption)
+    @BindView(R.id.textViewDistanceTargetCaption)
     TextView textViewDistanceTargetCaption;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
-    @Bind(R.id.TextViewStage)
+    @BindView(R.id.TextViewStage)
     TextView TextViewStage;
-    @Bind(R.id.chronometerTimer)
+    @BindView(R.id.chronometerTimer)
     Chronometer myChronometer;
-    @Bind(R.id.ViewStart)
+    @BindView(R.id.ViewStart)
     TextView ViewStart;
-    @Bind(R.id.textViewHeartRate)
+    @BindView(R.id.textViewHeartRate)
     TextView txtHeartRate;
-    @Bind(R.id.textViewDistance)
+    @BindView(R.id.textViewDistance)
     TextView txtDistance;
-    @Bind(R.id.textViewMaxHR)
+    @BindView(R.id.textViewMaxHR)
     TextView textViewMaxHR;
 
     @Override

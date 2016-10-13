@@ -29,7 +29,7 @@ import com.jjoe64.graphview.series.Series;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
 import my.com.taruc.fitnesscompanion.Classes.Duration;
@@ -44,43 +44,43 @@ import my.com.taruc.fitnesscompanion.UserLocalStore;
 
 public class MySleepDataGraphView extends Activity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewSleepDataTitle;
-    @Bind(R.id.imageViewBackButton)
+    @BindView(R.id.imageViewBackButton)
     ImageView imageViewBackButton;
-    @Bind(R.id.graph)
+    @BindView(R.id.graph)
     GraphView graph;
-    @Bind(R.id.SleepQualityCaption)
+    @BindView(R.id.SleepQualityCaption)
     TextView SleepQualityCaption;
-    @Bind(R.id.SleepQualityValue)
+    @BindView(R.id.SleepQualityValue)
     TextView SleepQualityValue;
-    @Bind(R.id.TotalSleepTimeCaption)
+    @BindView(R.id.TotalSleepTimeCaption)
     TextView TotalSleepTimeCaption;
-    @Bind(R.id.separator1)
+    @BindView(R.id.separator1)
     TextView separator1;
-    @Bind(R.id.TotalSleepTimeValue)
+    @BindView(R.id.TotalSleepTimeValue)
     TextView TotalSleepTimeValue;
-    @Bind(R.id.AsleepTimeCaption)
+    @BindView(R.id.AsleepTimeCaption)
     TextView AsleepTimeCaption;
-    @Bind(R.id.separator2)
+    @BindView(R.id.separator2)
     TextView separator2;
-    @Bind(R.id.AsleepTimeValue)
+    @BindView(R.id.AsleepTimeValue)
     TextView AsleepTimeValue;
-    @Bind(R.id.TimesAwakenCaption)
+    @BindView(R.id.TimesAwakenCaption)
     TextView TimesAwakenCaption;
-    @Bind(R.id.separator3)
+    @BindView(R.id.separator3)
     TextView separator3;
-    @Bind(R.id.TimesAwakenValue)
+    @BindView(R.id.TimesAwakenValue)
     TextView TimesAwakenValue;
-    @Bind(R.id.TableDetail)
+    @BindView(R.id.TableDetail)
     TableLayout TableDetail;
-    @Bind(R.id.ScrollView01)
+    @BindView(R.id.ScrollView01)
     ScrollView ScrollView01;
-    @Bind(R.id.previousDay)
+    @BindView(R.id.previousDay)
     ImageView previousDay;
-    @Bind(R.id.DateDisplay)
+    @BindView(R.id.DateDisplay)
     TextView DateDisplay;
-    @Bind(R.id.nextDay)
+    @BindView(R.id.nextDay)
     ImageView nextDay;
 
     UserLocalStore userLocalStore;

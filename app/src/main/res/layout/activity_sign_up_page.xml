@@ -204,8 +204,8 @@
                             android:text="cm"
                             android:textColor="@color/FontColor"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10px"
-                            android:layout_marginRight="10px"/>
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
                     </TableRow>
                 </TableLayout>
 
@@ -255,8 +255,8 @@
                             android:text="kg"
                             android:textColor="@color/FontColor"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10px"
-                            android:layout_marginRight="10px"/>
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
                     </TableRow>
                 </TableLayout>
 

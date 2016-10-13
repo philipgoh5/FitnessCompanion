@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.facebook.FacebookSdk;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.LoginPage;
 import my.com.taruc.fitnesscompanion.R;
@@ -23,11 +23,11 @@ import my.com.taruc.fitnesscompanion.UserLocalStore;
 public class ProfilePage extends ActionBarActivity {
 
     private static final int NUM_PAGES = 2;
-    @Bind(R.id.textViewUserProfile)
+    @BindView(R.id.textViewUserProfile)
     TextView textViewUserProfile;
-    @Bind(R.id.textViewHealthProfile)
+    @BindView(R.id.textViewHealthProfile)
     TextView textViewHealthProfile;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     private ViewPager mPager;

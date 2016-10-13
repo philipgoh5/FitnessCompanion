@@ -31,7 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.UserProfile;
 import my.com.taruc.fitnesscompanion.Database.HealthProfileDA;
@@ -42,17 +42,17 @@ import my.com.taruc.fitnesscompanion.UI.MainMenu;
 
 public class LoginPage extends ActionBarActivity implements View.OnClickListener {
 
-    @Bind(R.id.etEmail)
+    @BindView(R.id.etEmail)
     EditText etEmail;
-    @Bind(R.id.etPassword)
+    @BindView(R.id.etPassword)
     EditText etPassword;
-    @Bind(R.id.btnLogin)
+    @BindView(R.id.btnLogin)
     Button btnLogin;
-    @Bind(R.id.btnSignUp)
+    @BindView(R.id.btnSignUp)
     Button btnSignUp;
-    @Bind(R.id.login_button)
+    @BindView(R.id.login_button)
     LoginButton loginButton;
-    @Bind(R.id.textViewForgetPassword)
+    @BindView(R.id.textViewForgetPassword)
     TextView tvForgetPassword;
 
     UserLocalStore userLocalStore;

@@ -29,7 +29,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.ActivityPlan;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
@@ -69,15 +69,15 @@ public class MyRealTimeGraphView extends Activity {
 
     DateTime todayDate;
     DateTime displayDate;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewHistoryTitle;
-    @Bind(R.id.previousDay)
+    @BindView(R.id.previousDay)
     ImageView previousDay;
-    @Bind(R.id.nextDay)
+    @BindView(R.id.nextDay)
     ImageView nextDay;
-    @Bind(R.id.textViewChangeView)
+    @BindView(R.id.textViewChangeView)
     TextView textViewChangeView;
-    @Bind(R.id.TableDetail)
+    @BindView(R.id.TableDetail)
     TableLayout TableDetail;
 
     @Override

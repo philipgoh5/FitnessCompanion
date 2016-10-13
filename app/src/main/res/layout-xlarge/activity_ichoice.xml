@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_lbl_find"
             android:layout_margin="15dp"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_lbl_link"
             android:layout_margin="15dp"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_lbl_unlink"
             android:layout_margin="15dp"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />

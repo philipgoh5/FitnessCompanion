@@ -14,8 +14,9 @@ import android.widget.TextView;
 import com.facebook.FacebookSdk;
 import com.squareup.leakcanary.RefWatcher;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
 import my.com.taruc.fitnesscompanion.Classes.HealthProfile;
 import my.com.taruc.fitnesscompanion.Classes.UserProfile;
@@ -54,43 +55,47 @@ public class HealthProfilePage extends Fragment implements View.OnClickListener 
     Boolean isInternetPresent = false;
     ShowAlert alert = new ShowAlert();
 
-    @Bind(R.id.editHealthProfile)
+    private Unbinder unbinder;
+
+    @BindView(R.id.editHealthProfile)
     ImageView editHealthProfile;
-    @Bind(R.id.saveHealthProfile)
+    @BindView(R.id.saveHealthProfile)
     ImageView saveHealthProfile;
-    @Bind(R.id.editTextWeight)
+    @BindView(R.id.editTextWeight)
     EditText editTextWeight;
-    @Bind(R.id.editTextBloodP)
+    @BindView(R.id.editTextBloodP)
     EditText editTextBP;
-    @Bind(R.id.editTextRHR)
+    @BindView(R.id.editTextRHR)
     EditText editTextRHR;
-    @Bind(R.id.editBodyGirth)
+    @BindView(R.id.editBodyGirth)
     ImageView editBodyGirth;
-    @Bind(R.id.saveBodyGirth)
+    @BindView(R.id.saveBodyGirth)
     ImageView saveBodyGirth;
-    @Bind(R.id.editTextArm)
+    @BindView(R.id.editTextArm)
     EditText editTextArm;
-    @Bind(R.id.editTextChest)
+    @BindView(R.id.editTextChest)
     EditText editTextChest;
-    @Bind(R.id.editTextCalf)
+    @BindView(R.id.editTextCalf)
     EditText editTextCalf;
-    @Bind(R.id.editTextThigh)
+    @BindView(R.id.editTextThigh)
     EditText editTextThigh;
-    @Bind(R.id.editTextWaist)
+    @BindView(R.id.editTextWaist)
     EditText editTextWaist;
-    @Bind(R.id.editTextHip)
+    @BindView(R.id.editTextHip)
     EditText editTextHIP;
-    @Bind(R.id.textViewBMR)
+    @BindView(R.id.textViewBMR)
     TextView textViewBMR;
-    @Bind(R.id.textViewBMI)
+    @BindView(R.id.textViewBMI)
     TextView textViewBMI;
-    @Bind(R.id.textViewWHR)
+    @BindView(R.id.textViewWHR)
     TextView textViewWHR;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = (ViewGroup) inflater.inflate(R.layout.activity_health_profile_page, container, false);
+        unbinder = ButterKnife.bind(this, rootView);
         return rootView;
+
     }
 
     @Override
@@ -381,6 +386,6 @@ public class HealthProfilePage extends Fragment implements View.OnClickListener 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 }

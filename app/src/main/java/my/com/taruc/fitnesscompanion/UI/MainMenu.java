@@ -26,10 +26,14 @@ import android.widget.TextView;
 
 import com.facebook.FacebookSdk;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.AccelerometerSensor2;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.StepManager;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.TheService;
@@ -106,6 +110,7 @@ public class MainMenu extends ActionBarActivity {
     private ArrayList<Reminder> myReminderList;
     private AlarmServiceController alarmServiceController;
 
+
     //update Step
     StepManager stepManager;
     TextView txtCounter;
@@ -130,6 +135,7 @@ public class MainMenu extends ActionBarActivity {
         setContentView(R.layout.activity_main_menu_appbar_3);
 
         context = this;
+
         txtCounter = (TextView) findViewById(R.id.StepNumber);
         ichoiceRemark = (TextView) findViewById(R.id.ichoiceRemark);
         toolBar = (Toolbar) findViewById(R.id.app_bar);

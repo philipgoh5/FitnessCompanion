@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Adapter.ActivityPlanAdapter;
 import my.com.taruc.fitnesscompanion.Classes.ActivityPlan;
@@ -18,9 +18,9 @@ import my.com.taruc.fitnesscompanion.R;
 
 public class ActivityPlanPage extends Activity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
-    @Bind(R.id.RecycleViewCommonActivityPlan)
+    @BindView(R.id.RecycleViewCommonActivityPlan)
     RecyclerView RecycleViewCommonActivityPlan;
 
     ActivityPlanAdapter activityPlanAdapter;

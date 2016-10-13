@@ -37,7 +37,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:textSize="@dimen/fontSizeSmall"
-        android:background="@color/ButtonColor" />
+        android:background="@color/ButtonColor3" />
 
 
 </RelativeLayout>

@@ -16,8 +16,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
-            android:layout_marginLeft="115dp"
-            android:layout_marginRight="115dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
             android:src="@drawable/logo_drawer"
             android:id="@+id/logoDrawer" />
@@ -26,47 +25,41 @@
     <Button
         android:id="@+id/btnPairIChoice"
         android:layout_below="@id/containerDrawerImage"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingLeft="60dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
         android:text="Pair IChoice Device"
         android:background="@color/MainBackground"
-        android:drawableLeft="@drawable/ichoice_logo"
-        android:drawablePadding="27dp"/>
+        android:drawableLeft="@drawable/ichoice_logo" />
 
     <Button
         android:id="@+id/btnPairHR"
         android:layout_below="@id/btnPairIChoice"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="12dp"
         android:text="Pair HeartRate Device"
         android:background="@color/MainBackground"
-        android:drawableLeft="@drawable/heart_pulse"
-        android:drawablePadding="16dp"
-        />
+        android:drawableLeft="@drawable/heart_pulse" />
 
     <Button
         android:id="@+id/btnVirtualRacer"
         android:layout_below="@id/btnPairHR"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingLeft="45dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="55dp"
         android:text="Virtual Racer"
         android:background="@color/MainBackground"
-        android:drawableLeft="@drawable/virtualracer"
-        android:drawablePadding="14dp"/>
+        android:drawableLeft="@drawable/virtualracer" />
 
     <Button
         android:id="@+id/btnCheckHR"
         android:layout_below="@id/btnVirtualRacer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="35dp"
         android:text="Check Heart Rate"
         android:background="@color/MainBackground"
         android:onClick="onButtonCheckHR" />
@@ -74,17 +67,14 @@
     <Button
         android:id="@+id/btnSignOut"
         android:layout_below="@id/btnCheckHR"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingLeft="52dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="95dp"
         android:text="Sign Out"
         android:background="@color/MainBackground"
         android:drawableLeft="@drawable/ic_signout"
-        android:drawablePadding="21dp"
         />
-
-
 
 
 </RelativeLayout>

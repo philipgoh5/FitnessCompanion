@@ -24,6 +24,7 @@
 
     <item name="ButtonColor" type="color">#d8ebff</item>
     <item name="ButtonColor2" type="color">#2b4372</item>
+    <item name="ButtonColor3" type="color">#7dd2d9</item>
     <item name="ButtonFont" type="color">#243c3e</item>
     <item name="HorizontalLine" type="color">#8999A9</item>
     <item name="DisableColor" type="color">#8999A9</item>

@@ -27,7 +27,8 @@
             android:layout_below="@+id/HRicon"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="#B2B2FF">
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
@@ -184,7 +185,8 @@
             android:layout_below="@+id/healthDetailTable"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="#B2B2FF">
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
@@ -466,7 +468,8 @@
             android:layout_below="@+id/bodyGirthTable"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="#B2B2FF">
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="fill_parent"

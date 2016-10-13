@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
 import my.com.taruc.fitnesscompanion.Classes.Goal;
@@ -66,41 +66,41 @@ public class GoalPage extends ActionBarActivity {
     private ConnectionDetector mConnectionDetector;
     private ShowAlert alert = new ShowAlert();
 
-    @Bind(R.id.textViewMyGoal)
+    @BindView(R.id.textViewMyGoal)
     TextView textViewMyGoal;
-    @Bind(R.id.imageCurrentStatus)
+    @BindView(R.id.imageCurrentStatus)
     ImageView imageCurrentStatus;
-    @Bind(R.id.txtCurrentAmount)
+    @BindView(R.id.txtCurrentAmount)
     TextView txtCurrentAmount;
-    @Bind(R.id.txtCurrentUnit)
+    @BindView(R.id.txtCurrentUnit)
     TextView txtCurrentUnit;
-    @Bind(R.id.imageTargetStatus)
+    @BindView(R.id.imageTargetStatus)
     ImageView imageTargetStatus;
-    @Bind(R.id.txtTargetAmount)
+    @BindView(R.id.txtTargetAmount)
     TextView txtTargetAmount;
-    @Bind(R.id.txtTargetUnit)
+    @BindView(R.id.txtTargetUnit)
     TextView txtTargetUnit;
-    @Bind(R.id.contentTable)
+    @BindView(R.id.contentTable)
     TableLayout contentTable;
-    @Bind(R.id.buttonAddGoal)
+    @BindView(R.id.buttonAddGoal)
     ImageView buttonAddGoal;
-    @Bind(R.id.buttonEditGoal)
+    @BindView(R.id.buttonEditGoal)
     ImageView buttonEditGoal;
-    @Bind(R.id.buttonDeleteGoal)
+    @BindView(R.id.buttonDeleteGoal)
     ImageView buttonDeleteGoal;
-    @Bind(R.id.buttonNext)
+    @BindView(R.id.buttonNext)
     Button buttonNext;
-    @Bind(R.id.buttonPrevious)
+    @BindView(R.id.buttonPrevious)
     Button buttonPrevious;
-    @Bind(R.id.donut_progress)
+    @BindView(R.id.donut_progress)
     DonutProgress donutProgress;
-    @Bind(R.id.textViewDurationDate)
+    @BindView(R.id.textViewDurationDate)
     TextView textViewDurationDate;
-    @Bind(R.id.textViewNoGoal)
+    @BindView(R.id.textViewNoGoal)
     TextView textViewNoGoal;
-    @Bind(R.id.ScrollView01)
+    @BindView(R.id.ScrollView01)
     ScrollView ScrollView01;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     @Override

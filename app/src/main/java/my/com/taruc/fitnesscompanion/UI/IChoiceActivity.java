@@ -33,7 +33,7 @@ import com.github.amlcurran.showcaseview.targets.ViewTarget;
 
 import java.util.Calendar;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.AccelerometerSensor2;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.StepManager;
@@ -53,27 +53,27 @@ import my.com.taruc.fitnesscompanion.UserLocalStore;
 
 public class IChoiceActivity extends Activity implements View.OnClickListener {
 
-    @Bind(R.id.txt_data)
+    @BindView(R.id.txt_data)
     TextView txtData;
-    @Bind(R.id.btn_find)
+    @BindView(R.id.btn_find)
     Button btnFind;
-    @Bind(R.id.btn_link)
+    @BindView(R.id.btn_link)
     Button btnLink;
-    @Bind(R.id.sp_choose)
+    @BindView(R.id.sp_choose)
     Spinner spChoose;
-    @Bind(R.id.tv_Log)
+    @BindView(R.id.tv_Log)
     TextView txtLog;
-    @Bind(R.id.tv_battery)
+    @BindView(R.id.tv_battery)
     TextView tvBattery;
-    @Bind(R.id.tv_version)
+    @BindView(R.id.tv_version)
     TextView tvVersion;
-    @Bind(R.id.tv_deviceid)
+    @BindView(R.id.tv_deviceid)
     TextView tvDeviceId;
-    @Bind(R.id.tv_datetime)
+    @BindView(R.id.tv_datetime)
     TextView tvDateTime;
-    @Bind(R.id.btn_unlink)
+    @BindView(R.id.btn_unlink)
     Button btnUnlink;
-    @Bind(R.id.tv_datetimelabel)
+    @BindView(R.id.tv_datetimelabel)
     TextView lblDateTime;
 
     // 默认值

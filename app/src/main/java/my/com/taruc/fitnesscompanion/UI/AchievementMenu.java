@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Graph.MyExerciseGraphView;
 import my.com.taruc.fitnesscompanion.R;
@@ -14,7 +14,7 @@ import my.com.taruc.fitnesscompanion.R;
 
 public class AchievementMenu extends ActionBarActivity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     @Override

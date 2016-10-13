@@ -35,7 +35,7 @@
 
         <Button
             android:id="@+id/btn_find"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
 
         <Button
             android:id="@+id/btn_link"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
 
         <Button
             android:id="@+id/btn_unlink"
-            android:background="@color/ButtonColor"
+            android:background="@color/ButtonColor3"
             android:textColor="@color/ButtonFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

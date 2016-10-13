@@ -19,25 +19,27 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:id="@+id/textViewUserProfile"
-            android:src="@color/ButtonColor"
             android:onClick="GoUserProfile"
             android:clickable="true"
             android:text="User Profile"
             android:textSize="20dp"
             android:textColor="@color/FontColor"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:background="#7dd2d9"
+            android:layout_marginRight="5dp"/>
 
         <TextView
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:id="@+id/textViewHealthProfile"
-            android:src="@color/ButtonColor"
             android:onClick="GoHealthProfile"
             android:clickable="true"
             android:text="Health Profile"
             android:textSize="20dp"
             android:textColor="@color/FontColor"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:background="#bdc4c5"
+            android:layout_marginLeft="5dp"/>
     </LinearLayout>
 
     <android.support.v4.view.ViewPager

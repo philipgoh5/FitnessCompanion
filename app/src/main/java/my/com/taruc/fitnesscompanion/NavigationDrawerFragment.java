@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,8 +18,9 @@ import android.widget.ImageView;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.AccelerometerSensor2;
 import my.com.taruc.fitnesscompanion.BackgroundSensor.TheService;
 import my.com.taruc.fitnesscompanion.HRStripBLE.DeviceScanActivity;
@@ -36,17 +38,17 @@ public class NavigationDrawerFragment extends Fragment implements View.OnClickLi
     public static final String PREF_FILE_NAME = "testpref";
     public static final String KEY_USER_LEARNED_DRAWER = "user_learner_drawer";
 
-    @Bind(R.id.logoDrawer)
+    @BindView(R.id.logoDrawer)
     ImageView logoDrawer;
-    @Bind(R.id.btnPairIChoice)
+    @BindView(R.id.btnPairIChoice)
     Button btnPairIChoice;
-    @Bind(R.id.btnPairHR)
+    @BindView(R.id.btnPairHR)
     Button btnPairHR;
-    @Bind(R.id.btnVirtualRacer)
+    @BindView(R.id.btnVirtualRacer)
     Button btnVirtualRacer;
-    @Bind(R.id.btnCheckHR)
+    @BindView(R.id.btnCheckHR)
     Button btnCheckHR;
-    @Bind(R.id.btnSignOut)
+    @BindView(R.id.btnSignOut)
     Button btnSignOut;
 
     private ActionBarDrawerToggle mDrawerToggle;
@@ -56,6 +58,8 @@ public class NavigationDrawerFragment extends Fragment implements View.OnClickLi
     private View view_container;
     private AlarmServiceController alarmServiceController;
     UserLocalStore userLocalStore;
+
+    private Unbinder unbinder;
 
     public NavigationDrawerFragment() {
         // Required empty public constructor
@@ -84,6 +88,7 @@ public class NavigationDrawerFragment extends Fragment implements View.OnClickLi
         btnCheckHR.setOnClickListener(this);
         btnSignOut.setOnClickListener(this);
         alarmServiceController = new AlarmServiceController(view.getContext());
+        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
@@ -144,7 +149,7 @@ public class NavigationDrawerFragment extends Fragment implements View.OnClickLi
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @Override

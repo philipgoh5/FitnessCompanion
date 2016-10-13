@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Classes.ActivityPlan;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
@@ -37,7 +37,7 @@ import my.com.taruc.fitnesscompanion.UserLocalStore;
 
 public class ReminderNewPage extends ActionBarActivity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
     private ListView list;
     private AdapterReminderNew adapter;

@@ -38,7 +38,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.R;
 import my.com.taruc.fitnesscompanion.UI.MainMenu;
@@ -48,7 +48,7 @@ import my.com.taruc.fitnesscompanion.UI.MainMenu;
  */
 public class DeviceScanActivity extends ActionBarActivity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     private LeDeviceListAdapter mLeDeviceListAdapter;

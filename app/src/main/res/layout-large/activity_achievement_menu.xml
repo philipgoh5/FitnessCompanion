@@ -19,7 +19,7 @@
             android:layout_below="@+id/titleBar"
             android:background="@color/MainBackground">
             <TableRow
-                android:background="#D95763"
+                android:background="#03396c"
                 android:onClick="GoMedalPage"
                 android:gravity="center"
                 android:layout_marginTop="50dp"
@@ -50,7 +50,7 @@
                     android:paddingLeft="40dp" />
             </TableRow>
             <TableRow
-                android:background="#AEBA36"
+                android:background="#005b96"
                 android:onClick="GoRanking"
                 android:gravity="center"
                 android:paddingTop="10dp"
@@ -78,7 +78,7 @@
                     android:paddingLeft="40dp" />
             </TableRow>
             <TableRow
-                android:background="#F89D4F"
+                android:background="#6497b1"
                 android:onClick="GoHistory"
                 android:gravity="center"
                 android:paddingTop="10dp"
@@ -106,7 +106,7 @@
                     android:paddingLeft="40dp" />
             </TableRow>
             <TableRow
-                android:background="#4E86C5"
+                android:background="#8fa4b3"
                 android:gravity="center"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"

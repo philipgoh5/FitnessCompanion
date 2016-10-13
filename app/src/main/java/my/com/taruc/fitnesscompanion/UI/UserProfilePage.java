@@ -12,6 +12,7 @@ import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.os.Binder;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
@@ -33,8 +34,9 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import my.com.taruc.fitnesscompanion.Classes.DateTime;
 import my.com.taruc.fitnesscompanion.Classes.UserProfile;
 import my.com.taruc.fitnesscompanion.ConnectionDetector;
@@ -59,33 +61,33 @@ public class UserProfilePage extends Fragment implements View.OnClickListener {
     private Bitmap bitmap;
     private SlideDateTimeListener listener;
 
-    @Bind(R.id.imageView2)
+    @BindView(R.id.imageView2)
     ImageView profileImage;
-    @Bind(R.id.buttonLoadPicture)
+    @BindView(R.id.buttonLoadPicture)
     Button buttonLoadPicture;
-    @Bind(R.id.editIcon)
+    @BindView(R.id.editIcon)
     ImageView editIcon;
-    @Bind(R.id.saveProfile)
+    @BindView(R.id.saveProfile)
     ImageView saveProfile;
-    @Bind(R.id.textViewName)
+    @BindView(R.id.textViewName)
     TextView textViewName;
-    @Bind(R.id.editTextName)
+    @BindView(R.id.editTextName)
     EditText editTextName;
-    @Bind(R.id.textViewDOB)
+    @BindView(R.id.textViewDOB)
     TextView textViewDOB;
-    @Bind(R.id.editTextDOB)
+    @BindView(R.id.editTextDOB)
     EditText editTextDOB;
-    @Bind(R.id.textViewGender)
+    @BindView(R.id.textViewGender)
     TextView textViewGender;
-    @Bind(R.id.editTextGender)
+    @BindView(R.id.editTextGender)
     EditText editTextGender;
-    @Bind(R.id.textViewHeight)
+    @BindView(R.id.textViewHeight)
     TextView textViewHeight;
-    @Bind(R.id.editTextHeight)
+    @BindView(R.id.editTextHeight)
     EditText editTextHeight;
-    @Bind(R.id.textViewAge)
+    @BindView(R.id.textViewAge)
     TextView textViewAge;
-    @Bind(R.id.editTextAge)
+    @BindView(R.id.editTextAge)
     EditText editTextAge;
 
     // Connection detector class
@@ -96,9 +98,12 @@ public class UserProfilePage extends Fragment implements View.OnClickListener {
     ShowAlert alert = new ShowAlert();
     private SimpleDateFormat mFormatter = new SimpleDateFormat("yyy-MM-dd");
 
+    private Unbinder unbinder;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.activity_user_profile_page, container, false);
+        unbinder = ButterKnife.bind(this, rootView);
         return rootView;
     }
 
@@ -379,6 +384,6 @@ public class UserProfilePage extends Fragment implements View.OnClickListener {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 }

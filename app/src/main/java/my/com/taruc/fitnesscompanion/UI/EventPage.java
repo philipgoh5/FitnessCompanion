@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Adapter.EventAdapter;
 import my.com.taruc.fitnesscompanion.Classes.Event;
@@ -32,11 +32,11 @@ import my.com.taruc.fitnesscompanion.ShowAlert;
 
 public class EventPage extends ActionBarActivity {
 
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
-    @Bind(R.id.imageViewBackButton)
+    @BindView(R.id.imageViewBackButton)
     ImageView imageViewBackButton;
-    @Bind(R.id.RecyclerViewEvent)
+    @BindView(R.id.RecyclerViewEvent)
     RecyclerView mRecyclerView;
 
     private EventAdapter eventAdapter;

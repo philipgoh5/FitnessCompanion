@@ -25,7 +25,9 @@
             android:text="User Profile"
             android:textSize="45dp"
             android:textColor="@color/FontColor"
-            android:gravity="center_horizontal" />
+            android:background="#7dd2d9"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="5dp"/>
 
         <TextView
             android:layout_width="300dp"
@@ -37,7 +39,9 @@
             android:text="Health Profile"
             android:textSize="45dp"
             android:textColor="@color/FontColor"
-            android:gravity="center_horizontal" />
+            android:background="#bdc4c5"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"/>
     </LinearLayout>
 
     <android.support.v4.view.ViewPager

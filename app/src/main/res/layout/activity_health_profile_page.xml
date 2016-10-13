@@ -29,7 +29,7 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:layout_marginTop="20dp"
-            android:background="#2b4372">
+            android:background="#B2B2FF">
 
             <TextView
                 android:id="@+id/textView4"
@@ -97,8 +97,7 @@
                     android:inputType="numberDecimal"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -140,8 +139,7 @@
                     android:inputType="number"
                     android:digits="0123456789"
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -183,8 +181,7 @@
                     android:inputType="number"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -204,7 +201,7 @@
             android:layout_below="@+id/healthDetailTable"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:background="#2b4372">
+            android:background="#B2B2FF">
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
@@ -275,8 +272,7 @@
                     android:inputType="numberDecimal"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -316,8 +312,7 @@
                     android:inputType="numberDecimal"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -357,8 +352,7 @@
                     android:digits="0123456789."
                     android:maxLength="5"
                     android:inputType="numberDecimal"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -398,8 +392,7 @@
                     android:inputType="numberDecimal"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -439,8 +432,7 @@
                     android:inputType="numberDecimal"
                     android:digits="0123456789."
                     android:maxLength="5"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -480,8 +472,7 @@
                     android:inputType="numberDecimal"
                     android:maxLength="5"
                     android:digits="0123456789."
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext"/>
+                    android:layout_marginLeft="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -501,7 +492,8 @@
             android:layout_below="@+id/bodyGirthTable"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="#B2B2FF">
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="fill_parent"

@@ -42,7 +42,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp">
             <TableRow android:layout_marginBottom="10dp"
-                android:background="@color/SubBackground">
+                android:background="@drawable/rounded_edittext">
                 <ImageView
                     android:src="@drawable/login_username"
                     android:layout_column="0"
@@ -59,7 +59,7 @@
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/FontColor" />
             </TableRow>
-            <TableRow android:background="@color/SubBackground">
+            <TableRow android:background="@drawable/rounded_edittext">
                 <ImageView
                     android:src="@drawable/login_password"
                     android:id="@+id/imagePassword"

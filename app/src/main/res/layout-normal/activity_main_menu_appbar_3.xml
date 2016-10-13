@@ -249,9 +249,6 @@
                     android:id="@+id/ichoiceRemark"
                     android:gravity="center" />
             </RelativeLayout>
-
-
-
         </RelativeLayout>
         </ScrollView>
 

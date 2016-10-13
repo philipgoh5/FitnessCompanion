@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import my.com.taruc.fitnesscompanion.Adapter.RankingAdapter;
 import my.com.taruc.fitnesscompanion.Classes.Ranking;
@@ -38,9 +38,9 @@ public class RankingPage extends ActionBarActivity {
     ArrayList<String> rankingTypeList;
     String selectedType;
     ServerRequests serverRequests;
-    @Bind(R.id.TextViewOverallTitle)
+    @BindView(R.id.TextViewOverallTitle)
     TextView TextViewRankingType;
-    @Bind(R.id.textViewTitle)
+    @BindView(R.id.textViewTitle)
     TextView textViewTitle;
 
     @Override
