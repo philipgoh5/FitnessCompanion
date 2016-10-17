@@ -692,9 +692,9 @@ public class ExercisePage extends ActionBarActivity {
         countDownTimer.pause();
         String message;
         if (challengeSuccess()) {
-            message = "Your challenge is success! Are you sure wan to stop now?";
+            message = "Your challenge is success! Are you sure want to stop now?";
         } else {
-            message = "Your challenge is almost done! Are you sure wan to stop now?";
+            message = "Your challenge is almost done! Are you sure want to stop now?";
         }
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Stop Challenge")
